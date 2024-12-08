@@ -7,8 +7,10 @@
 apt update && apt upgrade
  
 apt install git
- 
-cd  Fast-ngrok
+
+git clone https://github.com/flar1o/termux_ngrok/
+
+cd  termux_ngrok
  
 chmod +x Fast-ngrok.sh
  
