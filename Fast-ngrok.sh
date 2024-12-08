@@ -1,5 +1,4 @@
 #!/bin/dash
-# bafomet
 atualizar='\033[1;32m'
 echo "$atualizar Обновления репозиториев..."
 apt update && upgrade -y
