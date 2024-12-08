@@ -13,7 +13,7 @@ case $opcao in
 y)
 echo
 echo " Скачивание Fast-ngrok ..."
-wget "https://github.com/flar1o/termux_ngrog/blob/main/ngrok-v3-stable-linux-arm64.zip?raw=true" -O ngrok.zip
+wget "https://github.com/flar1o/for_termux_ngrok/blob/main/ngrok-2.3.9-linux-arm64.zip?raw=true" -O ngrok.zip
 unzip ngrok.zip
 cat ngrok > /data/data/com.termux/files/usr/bin/ngrok
 chmod 700 /data/data/com.termux/files/usr/bin/ngrok
