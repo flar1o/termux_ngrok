@@ -13,24 +13,7 @@ case $opcao in
 y)
 echo
 echo " Скачивание Fast-ngrok ..."
-case `dpkg --print-architecture` in
-aarch64)
-    architectureURL="arm64" ;;
-arm)
-    architectureURL="arm" ;;
-armhf)
-    architectureURL="armhf" ;;
-amd64)
-    architectureURL="amd64" ;;
-i*86)
-    architectureURL="i386" ;;
-x86_64)
-    architectureURL="amd64" ;;
-*)
-    echo " Неизвестная архитектура "
-esac
-
-wget "https://github.com/Bafomet666/ngrok.dops/blob/main/ngrok-stable-linux-${architectureURL}.zip?raw=true" -O ngrok.zip
+wget "https://github.com/flar1o/termux_ngrog/blob/main/ngrok-v3-stable-linux-arm64.zip?raw=true" -O ngrok.zip
 unzip ngrok.zip
 cat ngrok > /data/data/com.termux/files/usr/bin/ngrok
 chmod 700 /data/data/com.termux/files/usr/bin/ngrok
@@ -42,7 +25,7 @@ echo "${k}██╔██╗ ██║██║  ███╗██████�
 echo "${k}██║╚██╗██║██║   ██║██╔══██╗██║   ██║██╔═██╗ ";
 echo "${k}██║ ╚████║╚██████╔╝██║  ██║╚██████╔╝██║  ██╗";
 echo "${k}╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝";
-echo "${r}                             by Bafomet 2020";
+echo "${r}                             by flar1o 2024";
 echo "Пример команды | ngrok http 8080)"
 ;;
 
