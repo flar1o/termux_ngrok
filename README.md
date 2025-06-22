@@ -1,4 +1,4 @@
-# termux_ngrog
+# termux_ngrok
 # Установка ngrok на Termux
 Перевел на русский и обновил репозитории
 
